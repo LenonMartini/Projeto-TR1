@@ -18,7 +18,7 @@ write_log('BANNER',0,'ACCESS');
                     <div class="large-15 page-desc" style="font-size: 14px; color: #444;font-weight: 700">
                         <a href="novo.php">NOVO BANNER</a>
                     </div>                   
-                    <div class="cell div-full" style="padding: 5px 0;"></div>
+                    <div class="cell div-full" tyle="padding: 5px 0;"></div>
                     <div class="cell prod-main">
                         <table id="table" class="responsive-card-table unstriped">
                             <thead>
@@ -43,7 +43,7 @@ write_log('BANNER',0,'ACCESS');
                                                 <a href="editar.php?id=<?= $row->ban_id ?>"><?= $row->ban_nome != '' ? $row->ban_nome : '<i>(Sem nome)</i>' ?></a>
                                             </td>
                                             <td> 
-                                                <img src="<?= BASE_URL ?>uploads/banner/<?=$row->ban_arquivo; ?>" style="max-width: 200px;">
+                                                <img src="<?= BASE_URL ?>adm/assets/uploads/banner/<?=$row->ban_arquivo; ?>" style="max-width: 200px;">
                                             </td>
                                             <td>
                                                 <button type="button" onclick="excluir_registro('<?= $row->ban_id ?>');">
